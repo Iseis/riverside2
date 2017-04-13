@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{%  load staticfiles %}
+
+{% block header %}
+    <link rel="stylesheet" href="{% static 'css/index_style.css' %}">
+    <script type="text/javascript" src="{% static 'js/index_script.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rochester" />
+{% endblock header %}
+
+{% block body %}
+    id="home"
+{% endblock body %}
+
+{% block content %}
+    <div id="slider-box">
+        <div id="slider1_container">
+            <div u="loading" id="loading">
+                <div id="loading2">
+                </div>
+                <div id="loading3">
+                </div>
+            </div>
+            <div u="slides" id="slides">
+                <div>
+                    <p>Testing</p>
+                </div>
+                <div>
+                    <p>More Testing</p>
+                </div>
+                <div>
+                    <p>Even more testing</p>
+                </div>
+            </div>
+            <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+                <div u="prototype"></div>
+            </div>
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+            </span>
+            <!--#endregion Arrow Navigator Skin End -->
+            <a style="display: none" href="http://www.jssor.com">Bootstrap Carousel</a>
+        </div>
+    </div>
+    <h1 class="index-header">Is this working</h1>
+{% endblock content %}
