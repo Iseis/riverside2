@@ -1,4 +1,7 @@
+body { padding-top: 70px; }
+
 #river-logo {
     width: 100px;
     height: 50px;
+    margin-right: 15px;
 }
