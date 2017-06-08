@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
-{%  load staticfiles %}
+{% load staticfiles %}
+{% load sstatic %}
 
 {% block header %}
     <link rel="stylesheet" href="{% static 'css/index_style.css' %}">
-    <script type="text/javascript" src="{% static 'js/index_script.js' %}"></script>
+    <script type="text/javascript" src="{% sstatic 'js/index_script.js' %}?v=00002"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rochester" />
 {% endblock header %}
 

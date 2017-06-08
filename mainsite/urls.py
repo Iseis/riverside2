@@ -9,7 +9,7 @@ from django.contrib.auth.views import (
 from django.views.generic import TemplateView, RedirectView
 from . import views
 
-urlpatterns = {
+urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'accounts/', include('registration.backends.simple.urls')),
     url(r'^accounts/password/reset/$',
@@ -28,4 +28,4 @@ urlpatterns = {
         password_reset_complete,
         {'template_name': 'registration/password_reset_complete.html'},
         name='password_reset_complete'),
-}
+]
