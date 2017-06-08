@@ -5,6 +5,7 @@ from django.contrib.auth.views import (
     password_reset_confirm,
     password_reset_done,
 )
+
 from django.views.generic import TemplateView, RedirectView
 from . import views
 
